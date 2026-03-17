@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👋 Anuradha Raj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="/assets/favicon.svg?v=1" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">Anuradha Raj</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Anuradha Raj</h1>
+          <p class="tagline">Front-end Developer &middot; React &amp; Next.js &middot; 3+ years experience</p>
+          <div class="hero-about">
+            <p>
+              I am a front-end developer based in <strong>Bangalore</strong> with hands-on experience designing and implementing
+              responsive, reusable user interface components using <strong>React</strong> and <strong>Redux</strong> in Agile and Scrum environments.
+            </p>
+            <p>
+              I enjoy building interactive single-page applications, integrating with multiple APIs and third-party services, and
+              turning product ideas into performant, user-friendly web experiences.
+            </p>
+            <p>
+              My toolkit includes JavaScript, React, Redux, Next.js, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git.
+              I am a quick learner, a collaborative team player, and always looking to expand my skills by working on real-world projects.
+            </p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Anuradha007" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/shikhhaayadav" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/profile.png" alt="Anuradha Raj" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section">
+      <h2>News</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">Mar 2026</span>
+          <span class="news-text">Actively contributing to JavaScript projects including an AI product description generator and InsightStream.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Nov 2024</span>
+          <span class="news-text">Worked on an AWS resource tracker demo to monitor and report cloud usage.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2023</span>
+          <span class="news-text">Built and refined multiple front-end projects with React and Next.js, focusing on responsive design and good UX.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2021</span>
+          <span class="news-text">Expanded my portfolio with projects like BMI Calculator and other JavaScript-based web apps.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Aug 2020</span>
+          <span class="news-text">Joined GitHub and started sharing my work as a front-end developer.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Anuradha Raj. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

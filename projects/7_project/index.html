@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Resource Tracker | 👋 Anuradha Raj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="/assets/favicon.svg?v=1" type="image/svg+xml">
+  <link rel="stylesheet" href="../../style.css?v=2">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="nav-brand">Anuradha Raj</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../../index.html">About</a></li>
+        <li><a href="../../projects.html" class="active">Projects</a></li>
+        <li><a href="../../publications.html">Publications</a></li>
+        <li><a href="../../cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>AWS Resource Tracker</h1>
+      <p>Cloud usage reporting script</p>
+    </div>
+
+    <div class="project-page-content">
+      <p>
+        A demo project for creating a script report for the usage of AWS resources in a project.
+      </p>
+
+      <h2>Tech Stack</h2>
+      <p>
+        Shell scripting and AWS tooling.
+      </p>
+
+      <div class="project-links">
+        <a href="https://github.com/Anuradha007/aws-resource-tracker" class="btn-github" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Anuradha Raj. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
