@@ -19,7 +19,7 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="index.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="volunteers.html">Beyond Work / Community Impact</a></li>
@@ -33,12 +33,11 @@
       <p>A selection of web and JavaScript projects.</p>
     </div>
 
-    <!-- Web -->
     <h2 class="project-category">Web</h2>
     <div class="projects-grid">
 
       <div class="project-card">
-        <div class="project-thumbnail software"><i class="fas fa-utensils" aria-hidden="true"></i></div>
+        <div class="project-thumbnail agentic"><i class="fas fa-brain" aria-hidden="true"></i></div>
         <div class="project-card-body">
           <div class="project-course">Web App</div>
           <h3><a href="projects/4_project/">InsightStream</a></h3>
@@ -112,7 +111,7 @@
       </div>
     </div>
 
-    <!-- Tools -->
+
     <h2 class="project-category">Tools</h2>
     <div class="projects-grid">
       <div class="project-card">
@@ -178,6 +177,17 @@
     document.querySelector('.nav-toggle').addEventListener('click', function() {
       document.querySelector('.nav-links').classList.toggle('active');
       this.classList.toggle('active');
+    });
+
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentPath = window.location.pathname.split('/').pop();
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute('href');
+
+      if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+        link.classList.add('active');
+      }
     });
   </script>
 </body>

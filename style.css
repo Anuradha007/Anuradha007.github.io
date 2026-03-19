@@ -47,7 +47,6 @@ a:hover {
   padding: 0 24px;
 }
 
-/* ── Navbar ── */
 .navbar {
   background: var(--bg);
   border-bottom: 1px solid var(--border);
@@ -87,6 +86,7 @@ a:hover {
 
 .nav-links a {
   color: var(--text-light);
+  text-decoration: none;
   font-size: 0.95rem;
   font-weight: 400;
   padding: 4px 0;
@@ -239,7 +239,6 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
-/* ── News ── */
 .news-section {
   padding: 48px 0;
   border-top: 1px solid var(--border);
@@ -284,7 +283,6 @@ a:hover {
   color: var(--text);
 }
 
-/* ── Projects Page ── */
 .page-header {
   padding: 48px 0 24px;
 }
@@ -301,7 +299,7 @@ a:hover {
   margin-top: 8px;
 }
 
-/* Project detail page */
+
 .project-page-content {
   padding-bottom: 64px;
   max-width: 720px;
@@ -351,7 +349,6 @@ a:hover {
   font-style: italic;
 }
 
-/* Project category sections (Vivek-style) */
 .project-category {
   font-size: 1.35rem;
   font-weight: 600;
@@ -514,7 +511,7 @@ a:hover {
   color: #0d0d0d;
 }
 
-/* ── Volunteers ── */
+
 .volunteers-list {
   padding-bottom: 64px;
 }
@@ -554,7 +551,7 @@ a:hover {
   color: var(--text-light);
 }
 
-/* ── CV Page ── */
+
 .cv-section {
   padding-bottom: 64px;
 }
@@ -632,7 +629,7 @@ a:hover {
   margin-bottom: 4px;
 }
 
-/* CV — General Information table */
+
 .cv-general-table {
   width: 100%;
   max-width: 520px;
@@ -665,7 +662,7 @@ a:hover {
   font-weight: 600;
 }
 
-/* CV — Timeline layout */
+
 .cv-timeline {
   display: flex;
   flex-direction: column;
@@ -673,22 +670,37 @@ a:hover {
 }
 
 .cv-timeline-item {
-  display: grid;
-  grid-template-columns: 140px 1fr;
+  display: flex;
+  align-items: flex-start;
   gap: 24px;
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
 }
 
-.cv-timeline-item:last-child {
-  border-bottom: none;
-}
-
 .cv-timeline-date {
+  flex-shrink: 0;
+  width: 140px;
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--accent);
-  flex-shrink: 0;
+}
+
+.cv-timeline-body {
+  flex: 1;
+  min-width: 0;
+  display: table;
+  width: 100%;
+}
+
+.cv-timeline-place {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.cv-timeline-item:last-child {
+  border-bottom: none;
 }
 
 .cv-timeline-body h3 {
@@ -696,12 +708,6 @@ a:hover {
   font-weight: 600;
   color: var(--primary);
   margin-bottom: 2px;
-}
-
-.cv-timeline-place {
-  font-size: 0.85rem;
-  color: var(--text-light);
-  margin-bottom: 8px;
 }
 
 .cv-timeline-body ul {
@@ -724,11 +730,12 @@ a:hover {
 
 @media (max-width: 600px) {
   .cv-timeline-item {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 4px;
   }
 
   .cv-timeline-date {
+    width: auto;
     margin-bottom: 4px;
   }
 }
@@ -751,7 +758,7 @@ a:hover {
   color: var(--text-light);
 }
 
-/* ── Footer ── */
+
 footer {
   border-top: 1px solid var(--border);
   padding: 24px 0;
@@ -763,7 +770,7 @@ footer p {
   color: var(--text-light);
 }
 
-/* ── Responsive ── */
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
